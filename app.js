@@ -13,7 +13,8 @@ $( document ).ready(function() {
       textReport.find('.js-word-count').text(wordCount);
       textReport.find('.js-unique-word-count').text(distinctWords);
       textReport.find('.js-average-word-length').text(
-        averageWordLength + " characters");      })
+        averageWordLength + " characters");
+      })
     };
 
     function standardizeWords(text) {
@@ -39,7 +40,5 @@ $( document ).ready(function() {
       var totalCharacter = text.join("").length;
       return (totalCharacter / text.length);
     }
-
-
     $(formSubmission);
     });
